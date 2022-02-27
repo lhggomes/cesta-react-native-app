@@ -6,10 +6,10 @@ import topo from '../../../../assets/topo.png'
 
 const width = Dimensions.get('screen').width;
 
-export default function Topo() {
+export default function Topo({titulo}) {
     return <>
         <Image source={topo} style={estilos.topo}></Image>
-        <Texto style={estilos.titulo}>Detalhe da Cesta</Texto>
+        <Texto style={estilos.titulo}>{titulo}</Texto>
     </>
 }
 
@@ -30,8 +30,4 @@ const estilos = StyleSheet.create({
         padding: 16
     },
 
-    cesta:{
-        paddingVertical: 8,
-        paddingHorizontal: 16
-    },
 })

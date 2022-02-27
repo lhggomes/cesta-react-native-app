@@ -5,11 +5,11 @@ import Topo from './Topo';
 import Detalhes from './Detalhes';
 
 
-export default function Cesta(){
+export default function Cesta({topo, detalhes}){
     return <>
-    <Topo/>
+    <Topo {...topo}/>
     <View style={estilos.cesta}>
-    <Detalhes/>
+    <Detalhes {...detalhes}/>
     </View>
     </>
 }
